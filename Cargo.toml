@@ -1,0 +1,15 @@
+[package]
+name = "async_execution"
+version = "0.0.1"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[features]
+default = []
+openmp = ["openmp_runtime"]
+
+[lib]
+name = "async_execution"
+path = "src/lib.rs"
+
+[dependencies]
+openmp_runtime = { path = "../libopenmp_runtime", optional = true }
